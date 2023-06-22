@@ -1,0 +1,30 @@
+#include <stdio.h>
+
+int main()
+{
+    struct complex{
+        float r;
+        float i;
+    }x,y,z;
+
+    printf("Enter the real and imaginary part of first number: ");
+    scanf("%f %f",&x.r,&x.i);
+    printf("Enter the real and imaginary part of second number: ");
+    scanf("%f %f",&y.r,&y.i);
+
+    z.r = (x.r * y.r)-(x.i * y.i);
+    z.i = (x.r * y.i) + (y.r * x.i);
+
+    if(z.i > 0){
+        printf("%.2f+%.2fi",z.r,z.i);
+    }
+    else if(z.i == 0){
+        printf("%.2f",z.r);
+    }
+    else{
+        z.i = -1 * z.i;
+        printf("%.2f-%.2fi",z.r,z.i);
+    }
+
+    return 0;
+}
