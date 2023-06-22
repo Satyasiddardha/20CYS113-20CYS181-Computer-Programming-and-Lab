@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+struct complex{
+    int x;
+    int i;
+    int z;
+    
+}c;
+int main(){
+   printf("enter any negative number\n");
+   scanf("%d",&c.i);
+   printf("enter another complex\n");
+   scanf("%d", &c.z);
+  c.x =(c.i*c.z);
+    printf("%d\n",c.x);
+
+    return 0;
+}

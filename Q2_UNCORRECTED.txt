@@ -1,0 +1,18 @@
+#include <stdio.h>
+int i,j,rows;
+printf("enter the no.of rows\n");
+scanf("%d",&rows);
+for(i=1;i<=rows;++i) {
+    printf(" ");
+    for(j=1;j<=rows;++j){
+        printf(" 1");
+        printf("\n");
+    }
+}
+if(i+j<=rows){
+    printf(" ");
+    else if
+    printf("%d",i+j=rows);
+}
+    return 0;
+}
